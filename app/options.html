@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title></title>
+  <style>
+    .kv { margin-bottom: 10px; }
+  </style>
+</head>
+
+<body>
+  <div class="kv">
+    <label for="channel">Update channel:</label>
+    <select id="channel" v-model="channel" v-on:change="save">
+      <option value="dev">Dev</option>
+      <option value="beta">Beta</option>
+      <option value="stable">Stable</option>
+    </select>
+  </div>
+  <div class="kv">
+    <label for="linux">Linux Distribution:</label>
+    <select id="linux" v-model="linux" v-on:change="save">
+      <option value="deb">Debian/Ubuntu</option>
+      <option value="rpm">Fedora/openSUSE</option>
+    </select>
+    <span>(Specify this option if you are using Linux)</span>
+  </div>
+  <script src="lib/vue.min.js"></script>
+  <script src="js/options.js"></script>
+</body>
+
+</html>

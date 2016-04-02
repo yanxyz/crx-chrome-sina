@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title></title>
+  <style>
+  body {
+    width: 320px;
+  }
+
+  .label {
+    display: inline-block;
+    width: 50px;
+    text-align: right;
+    margin-right: 5px;
+  }
+
+  .error {
+    color: red;
+  }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h3>Google Chrome</h3>
+    <p>
+      <a href="{{urls.sina}}" target="_blank" style="margin-right: 15px" v-if="!isDeb">Sina Download Page</a>
+      <a href="{{urls.channels}}" target="_blank">Chrome Release Channels</a>
+    </p>
+  </header>
+  <template v-if="ok">
+    <p><span class="label">Versions:</span>{{info}}</p>
+    <p><span class="label">Current:</span>{{version}} {{channel}} {{arch}}</p>
+    <template v-if="hasUpdates">
+      <p>
+        <span class="label">new:</span>
+        <a href="{{urls.download}}" target="_blank">{{version}}</a>
+        <span>{{ isDeb ? 'download from Goolge' : ''}}</span>
+      </p>
+    </template>
+    <p v-else>No updates</p>
+  </template>
+  <template v-else>
+    <p class="error">{{error}}</p>
+  </template>
+  <script src="lib/vue.min.js"></script>
+  <script src="js/popup.js"></script>
+</body>
+
+</html>
