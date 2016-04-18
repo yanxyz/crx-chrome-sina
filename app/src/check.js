@@ -69,6 +69,7 @@ function compare (versions) {
 
       const data = {
         info: versions.info,
+        newVersion: v,
         version,
         arch,
         channel,
