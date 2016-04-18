@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Chrome Update",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Check for Chrome updates from Sina download site",
   "minimum_chrome_version": "49",
   "author": "Ivan Yan",
