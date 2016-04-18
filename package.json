@@ -10,7 +10,7 @@
     ]
   },
   "scripts": {
-    "dev": "webpack - w",
+    "dev": "webpack -w",
     "zip": "webpack --hide-modules && rm -f app.zip && zip -q -r app.zip app -x *src/* -x **/*.md"
   },
   "keywords": [],
