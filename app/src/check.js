@@ -64,7 +64,7 @@ function compare (versions) {
 
       const {version, arch, ext} = getBrowserInfo(linux)
       if (!ext) {
-        throw new Error('Your OS is not supportted')
+        throw new Error('Your OS is not supported')
       }
 
       const data = {
