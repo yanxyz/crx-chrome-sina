@@ -1,0 +1,12 @@
+{
+  "name": "crx-chrome-sina",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Ivan Yan",
+  "license": "MIT",
+  "private": true,
+  "repository": "yanxyz/crx-chrome-sina",
+  "scripts": {
+    "zip": "rm -f extension.zip && zip -q -r extension.zip extension"
+  }
+}

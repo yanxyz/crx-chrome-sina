@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title></title>
+  <style>
+    body {
+      font-size: 100%;
+      width: 24em;
+    }
+
+    h1 {
+      font-size: 1.5em;
+    }
+
+    #error {
+      display: none;
+      color: red;
+    }
+
+    #loader {
+      display: none;
+      text-align: center;
+    }
+
+    .loading #loader {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Google Chrome Updates</h1>
+  <p><a href="" target="_blank" id="sina">Sina Download Page</a></p>
+  <div id="results"></div>
+  <p id="error"></p>
+  <p id="loader"><img src="img/balls.svg" alt=""></p>
+  <script src="js/popup.js"></script>
+</body>
+</html>
